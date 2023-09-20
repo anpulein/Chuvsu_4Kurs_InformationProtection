@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - InformationProtection</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/> *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/tailwindOut.css" asp-append-version="true"/>
+</head>
+<body>
+
+@{
+    var s = true;
+}
+
+<div class="listbox">
+    <label id="listbox-label" class="block text-sm font-medium leading-6 text-gray-900">Лабораторные работы</label>
+    <div class="relative mt-2">
+        <button type="button" class="listbox-btn relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6" aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+            <span class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 flex-shrink-0 rounded-full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
+                </svg>
+                <span class="ml-3 block truncate">Тест1</span>
+            </span>
+            <span class="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
+                <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 3a.75.75 0 01.55.24l3.25 3.5a.75.75 0 11-1.1 1.02L10 4.852 7.3 7.76a.75.75 0 01-1.1-1.02l3.25-3.5A.75.75 0 0110 3zm-3.76 9.2a.75.75 0 011.06.04l2.7 2.908 2.7-2.908a.75.75 0 111.1 1.02l-3.25 3.5a.75.75 0 01-1.1 0l-3.25-3.5a.75.75 0 01.04-1.06z" clip-rule="evenodd"/>
+                </svg>
+            </span>
+        </button>
+
+        <!--
+        Select popover, show/hide based on select state.
+
+        Entering: ""
+        From: ""
+        To: ""
+        Leaving: "transition ease-in duration-100"
+        From: "opacity-100"
+        To: "opacity-0"
+        -->
+        <ul class="listbox-list absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm" tabindex="-1" role="listbox" aria-labelledby="listbox-label" aria-activedescendant="listbox-option-3">
+            <!--
+            Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+
+            Highlighted: "bg-indigo-600 text-white", Not Highlighted: "text-gray-900"
+            -->
+            <li class="text-gray-900 relative cursor-default select-none py-2 pl-3 pr-9" id="listbox-option-0" role="option">
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 flex-shrink-0 rounded-full">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
+                    </svg>
+                    <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                    <span class="font-normal ml-3 block truncate">Тест2</span>
+                </div>
+
+                <!--
+                Checkmark, only display for selected option.
+
+                Highlighted: "text-white", Not Highlighted: "text-indigo-600"
+                -->
+                <span class="text-indigo-600 absolute inset-y-0 right-0 flex items-center pr-4">
+                    <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"/>
+                    </svg>
+                </span>
+            </li>
+
+            <!-- More items... -->
+        </ul>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    @if (s)
+    {
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    }
+    else
+    {
+        <main class="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+            @RenderBody();
+        </main>
+    }
+</div>
+
+<footer class="bg-white white:bg-gray-900">
+    <div class="container px-6 py-8 mx-auto">
+        <div class="flex flex-col items-center text-center">
+            <a href="#">
+                <img class="w-auto h-7" src="https://merakiui.com/images/full-logo.svg" alt="">
+            </a>
+
+            <p class="max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400">Framer Information Protection</p>
+
+        </div>
+
+        <hr class="my-10 border-gray-200 dark:border-gray-700"/>
+
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+            <p class="text-sm text-gray-500">© Copyright 2023. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

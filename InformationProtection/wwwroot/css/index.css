@@ -1,0 +1,14 @@
+﻿main .form .input-text {
+    width: 700px;
+    margin-bottom: 20px;
+    box-shadow: 6px 4px 9px #C0C0C0;
+}
+
+main .form .input-text input {
+    line-height: 2.1;
+}
+
+main .form .terminal {
+    margin-top: 10px;
+    box-shadow: 6px 4px 9px #C0C0C0;
+}
