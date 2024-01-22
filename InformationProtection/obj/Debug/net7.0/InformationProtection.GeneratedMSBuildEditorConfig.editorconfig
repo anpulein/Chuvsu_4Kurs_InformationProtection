@@ -9,37 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InformationProtection
 build_property.RootNamespace = InformationProtection
-build_property.ProjectDir = H:\Projects\Study\Projects\Rider\Chuvsu_4Kurs_InformationProtection\InformationProtection\
+build_property.ProjectDir = /Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = H:\Projects\Study\Projects\Rider\Chuvsu_4Kurs_InformationProtection\InformationProtection
+build_property.MSBuildProjectDirectory = /Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection
 build_property._RazorSourceGeneratorDebug = 
 
-[H:/Projects/Study/Projects/Rider/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Projects/Study/Projects/Rider/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Home/LabCompanentContainer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9MYWJDb21wYW5lbnRDb250YWluZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Projects/Study/Projects/Rider/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Projects/Study/Projects/Rider/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Projects/Study/Projects/Rider/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Projects/Study/Projects/Rider/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[H:/Projects/Study/Projects/Rider/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-simhc28tye
+[/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-szkxjxr04k

@@ -19,7 +19,9 @@
 html {
   position: relative;
   min-height: 100%;
+    background: #F9F9F9;
 }
+
 
 main {
     min-height: calc(74vh - 80px);
@@ -39,7 +41,7 @@ main {
 }
 
 .listbox .listbox-btn {
-    width: 400px;
+    width: 512px;
 }
 
 .listbox .listbox-list {

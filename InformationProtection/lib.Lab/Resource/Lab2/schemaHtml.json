@@ -1,0 +1,14 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Value": {
+      "type": "string",
+      "description": "Введите значение"
+    },
+    "Key": {
+      "type": "string",
+      "description": "Введите ключ"
+    }
+  }
+}

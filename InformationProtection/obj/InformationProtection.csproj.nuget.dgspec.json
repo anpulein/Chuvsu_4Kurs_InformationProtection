@@ -1,32 +1,111 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Projects\\Study\\Projects\\Rider\\Chuvsu_4Kurs_InformationProtection\\InformationProtection\\InformationProtection.csproj": {}
+    "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/InformationProtection.csproj": {}
   },
   "projects": {
-    "H:\\Projects\\Study\\Projects\\Rider\\Chuvsu_4Kurs_InformationProtection\\InformationProtection\\InformationProtection.csproj": {
+    "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/InformationProtection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Projects\\Study\\Projects\\Rider\\Chuvsu_4Kurs_InformationProtection\\InformationProtection\\InformationProtection.csproj",
+        "projectUniqueName": "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/InformationProtection.csproj",
         "projectName": "InformationProtection",
-        "projectPath": "H:\\Projects\\Study\\Projects\\Rider\\Chuvsu_4Kurs_InformationProtection\\InformationProtection\\InformationProtection.csproj",
-        "packagesPath": "C:\\Users\\dastalein\\.nuget\\packages\\",
-        "outputPath": "H:\\Projects\\Study\\Projects\\Rider\\Chuvsu_4Kurs_InformationProtection\\InformationProtection\\obj\\",
+        "projectPath": "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/InformationProtection.csproj",
+        "packagesPath": "/Users/anpulein/.nuget/packages/",
+        "outputPath": "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\dastalein\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/anpulein/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.asoft.local/nuget": {},
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/lib.Lab/lib.Lab.csproj": {
+                "projectPath": "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/lib.Lab/lib.Lab.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Tailwind.Extensions.AspNetCore": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/lib.Lab/lib.Lab.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/lib.Lab/lib.Lab.csproj",
+        "projectName": "lib.Lab",
+        "projectPath": "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/lib.Lab/lib.Lab.csproj",
+        "packagesPath": "/Users/anpulein/.nuget/packages/",
+        "outputPath": "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/lib.Lab/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/anpulein/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,9 +124,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Tailwind.Extensions.AspNetCore": {
+            "System.Security.Cryptography.Algorithms": {
               "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
@@ -61,15 +140,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
             },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -18,4 +18,7 @@ public interface IEncryptor
     /// <param name="value"></param>
     /// <returns>text decrypt</returns>
     public string Decrypt(string value);
+
+    public string EncryptTest(string value);
+    public string DecryptTest(string value);
 }

@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
       <PackageReference Include="Tailwind.Extensions.AspNetCore" Version="1.0.0" />
     </ItemGroup>
 	
@@ -14,6 +15,50 @@
 		<UpToDateCheckBuilt Include="wwwroot/css/site.css" Set="Css" />
 		<UpToDateCheckBuilt Include="tailwind.config.js" Set="Css" />
 	</ItemGroup>
+	
+	<ItemGroup>
+	  <Compile Remove="ProtectTest\**" />
+	  <Compile Remove="lib.Lab\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <EmbeddedResource Remove="ProtectTest\**" />
+	  <EmbeddedResource Remove="lib.Lab\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Content Remove="ProtectTest\**" />
+	  <Content Remove="lib.Lab\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <None Remove="ProtectTest\**" />
+	  <None Remove="lib.Lab\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="ProtectTest\obj\project.assets.json" />
+	  <_ContentIncludedByDefault Remove="ProtectTest\obj\project.packagespec.json" />
+	  <_ContentIncludedByDefault Remove="ProtectTest\obj\ProtectTest.csproj.nuget.dgspec.json" />
+	  <_ContentIncludedByDefault Remove="ProtectTest\bin\Debug\net7.0\ProtectTest.deps.json" />
+	  <_ContentIncludedByDefault Remove="ProtectTest\bin\Debug\net7.0\ProtectTest.runtimeconfig.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\bin\Debug\net7.0\lib.Lab.deps.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\obj\lib.Lab.csproj.nuget.dgspec.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\obj\project.assets.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\obj\project.packagespec.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\Resource\Lab1\schemaHtml.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\Resource\Lab2\schemaHtml.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\Resource\Lab3\schemaHtml.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\Resource\Lab4\schemaHtml.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\Resource\Lab5\schemaHtml.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\Resource\Lab6\schemaHtml.json" />
+	  <_ContentIncludedByDefault Remove="lib.Lab\Resource\Lab7\schemaHtml.json" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="lib.Lab\lib.Lab.csproj" />
+	</ItemGroup>
+	
 
 	<Target Name="Tailwind" BeforeTargets="Build">
 		<Exec Command="npm run css:build"/>

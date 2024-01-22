@@ -1,18 +1,30 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.Reflection;
+using System.ComponentModel;
 using lib.Lab.Models.Enum;
 
-namespace lib.Lab.Provider;
+namespace lib.Lab.Providers;
 
 public static class EnumExtension
 {
+    
     public static string Description(this Enum @enum)
     {
-        var enumType = @enum.GetType();
-        var field = enumType.GetField(@enum.ToString());
-        var attributes = field?.GetCustomAttributes(typeof(DescriptionAttribute), false);
+        FieldInfo? fieldInfo = @enum.GetType().GetField(@enum.ToString());
+        var attribute = fieldInfo?.GetCustomAttribute<LabDataAttribute>();
         
-        return attributes?.Length == 0 ? @enum.ToString() : ((DescriptionAttribute)attributes[0]).Description;
+        return attribute?.Description ?? "none";
+    }
+
+    public static bool GetIsInclude(this Enum @enum)
+    {
+        FieldInfo? fieldInfo = @enum.GetType().GetField(@enum.ToString());
+        var attribute = fieldInfo?.GetCustomAttribute<LabDataAttribute>();
+        
+        return attribute?.IsInclude ?? false;
     }
     
+    
     public static string GetNameEnumLab(this Labs @lab) => Enum.GetName(typeof(Labs), @lab);
+    public static Labs GetParseName(string name) => (Labs)Enum.Parse(typeof(Labs), name);
 }

@@ -1,25 +1,42 @@
-﻿using System.ComponentModel;
+﻿using System;
 
 namespace lib.Lab.Models.Enum;
 
 public enum Labs
 {
-    [Description("Шифрование данных методом подстановки (1)")]
+    [LabData("Шифрование данных методом подстановки (1)", true)]
     Lab1,
-    [Description("Шифрование данных методом перестановки (2)")]
+    [LabData("Шифрование данных методом перестановки (2)", true)]
     Lab2,
-    [Description("Линейное шифрование данных (Гаммирование) (3)")]
+    [LabData("Линейное шифрование данных (Гаммирование) (3)", true)]
     Lab3,
-    [Description("Класический криптографический алгоритм DESC (4)")]
+    [LabData("Класический криптографический алгоритм DESC (4)", true)]
     Lab4,
-    [Description("Работа алгоритма DES в режиме CBC (5)")]
+    [LabData("Работа алгоритма DES в режиме CBC (5)", true)]
     Lab5,
-    [Description("Работа алгоритма DES в режиме CFB (6)")]
+    [LabData("Работа алгоритма DES в режиме CFB (6)", true)]
     Lab6,
-    [Description("Работа алгоритма DES в режиме OFB (7)")]
+    [LabData("Работа алгоритма DES в режиме OFB (7)", true)]
     Lab7,
-    [Description("Метод изменения интервала между предложениями (8)")]
+    [LabData("Метод изменения интервала между предложениями (8)", false)]
     Lab8,
-    [Description("Метод изменения кол-ва пробелов в конце текстовых строк (9)")]
+    [LabData("Метод изменения кол-ва пробелов в конце текстовых строк (9)", false)]
     Lab9
 }
+
+
+
+[AttributeUsage(AttributeTargets.Field, Inherited = false, AllowMultiple = false)]
+sealed class LabDataAttribute : Attribute
+{
+    public string Description { get; }
+    public bool IsInclude { get; }
+
+    public LabDataAttribute(string description, bool isInclude)
+    {
+        Description = description;
+        IsInclude = isInclude;
+    }
+}
+
+

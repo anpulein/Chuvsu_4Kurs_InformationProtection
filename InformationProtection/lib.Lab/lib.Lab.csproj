@@ -4,7 +4,20 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+
+
+
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Models\Helpers\" />
+    </ItemGroup>
+
+
 
 
 </Project>
