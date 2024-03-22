@@ -19,8 +19,8 @@ public class LabFactory : ILabFactory
         Labs.Lab5 => new DesCbcEncryptor(key),
         Labs.Lab6 => new DesCfbEncryptor(key),
         Labs.Lab7 => new DesOfbEncryptor(key),
-        // Labs.Lab8 => new ReplaceEncryptor(key),
-        // Labs.Lab9 => new ReplaceEncryptor(key),
+        Labs.Lab8 => new ReplaceEncryptor(key),
+        Labs.Lab9 => new ReplaceEncryptor(key),
         _ => throw new InvalidOperationException("Лабораторная работа недоступна")
     };
 }

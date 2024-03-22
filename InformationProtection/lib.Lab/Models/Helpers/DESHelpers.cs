@@ -68,6 +68,20 @@ public static class DESHelpers
             yield return msg.Substring(ind, blockLen);
         }
     }
+    
+    public static IEnumerable<List<int>> SplitTextToBlocks(this List<int> list, int blockLen = 8)
+    {
+        List<int> block = new List<int>();
+        foreach (var elem in list)
+        {
+            block.Add(elem);
+            if (block.Count == blockLen)
+            {
+                yield return block.ToList();
+                block.Clear();
+            }
+        }
+    }
 
     public static List<int> ShiftLeft(this List<int> bitList, int shiftCount)
     {

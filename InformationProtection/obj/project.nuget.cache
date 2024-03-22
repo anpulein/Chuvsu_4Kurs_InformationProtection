@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d0x6VqQVTVe3RZL8s18jq9soW1nd2LMlbhd2tueqBTGyzKYrJ/+JxWQitQsHNV4bzcYpOO8xL4BPleR0tfRXng==",
+  "dgSpecHash": "cIsRqb8FBmMBshalSnvFPuWZJ72q1nPu/jPqY6p3RE5cDFNi5BkPAWYpeHOr33a0A7X/xVV6bCJsABs7+9JN1g==",
   "success": true,
   "projectFilePath": "/Users/anpulein/Documents/Projects/Chuvsu/Chuvsu_4Kurs_InformationProtection/InformationProtection/InformationProtection.csproj",
   "expectedPackageFiles": [
@@ -66,9 +66,9 @@
     "/Users/anpulein/.nuget/packages/system.xml.readerwriter/4.0.11/system.xml.readerwriter.4.0.11.nupkg.sha512",
     "/Users/anpulein/.nuget/packages/system.xml.xdocument/4.0.11/system.xml.xdocument.4.0.11.nupkg.sha512",
     "/Users/anpulein/.nuget/packages/tailwind.extensions.aspnetcore/1.0.0/tailwind.extensions.aspnetcore.1.0.0.nupkg.sha512",
-    "/Users/anpulein/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "/Users/anpulein/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "/Users/anpulein/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.14/microsoft.netcore.app.host.osx-arm64.7.0.14.nupkg.sha512"
+    "/Users/anpulein/.nuget/packages/microsoft.netcore.app.ref/7.0.15/microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "/Users/anpulein/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.15/microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "/Users/anpulein/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.15/microsoft.netcore.app.host.osx-arm64.7.0.15.nupkg.sha512"
   ],
   "logs": [
     {
